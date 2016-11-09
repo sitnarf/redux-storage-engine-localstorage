@@ -10,12 +10,6 @@
 
 `window.localStorage` based engine for [redux-storage][].
 
-# A fork of [michaelcontento/redux-storage-engine-localstorage](https://github.com/michaelcontento/redux-storage-engine-localstorage)
-
-The original author of the package [redux-storage-engine-localstorage](https://github.com/michaelcontento/redux-storage-engine-localstorage) has decided to deprecate the project and no longer maintained. The package will now be maintained here.
-
-Thank you michaelcontento for a great library!
-
 ## Installation
 
     npm install --save redux-storage-engine-localstorage
@@ -57,6 +51,12 @@ operation will block the JS thread!
 **Warning**: Some browsers like IE<=11 does not support Promises! If you don't
 want to polyfill the whole Promise API, [redux-storage-engine-localstoragefakepromise][]
 might be a possible solution for you.
+
+# A fork of [redux-storage-engine-localstorage](https://github.com/michaelcontento/redux-storage-engine-localstorage)
+
+The original author of the package [redux-storage-engine-localstorage](https://github.com/michaelcontento/redux-storage-engine-localstorage) has decided to deprecate the project and no longer maintained. The package will now be maintained here.
+
+Thank you [michaelcontento](https://github.com/michaelcontento) for a great library!
 
 ## License
 
