@@ -6,8 +6,12 @@ const fs = require("fs");
 export default (key, replacer, reviver) => ({
     load() {
         return new Promise(resolve => {
-            var jsonState = fs.readFileSync("storage");
-            resolve(JSON.parse(jsonState, reviver) || {});
+            try {
+                var jsonState = fs.readFileSync("storage");
+                resolve(JSON.parse(jsonState, reviver) || {});
+            } catch {
+                resolve(null);
+            }
         }).catch(rejectWithMessage);
     },
 
